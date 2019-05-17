@@ -8,13 +8,25 @@
   <input type="number" name="flightNo" ></input>
   
   <label>Departure Date:</label>
-  <input type="date" name="departs" ></input>
+  <input type="datetime-local" name="departs" ></input>
   
   <label>Airport:</label>
-  <input type="text" name="airport" ></input>
+  <select name="airport" >
+    <option value="DFW">DFW</option>
+    <option value="ATX">ATX</option>
+    <option value="BIA">BIA</option>
+    <option value="TKY">TKY</option>
+    <option value="NYC">NYC</option>
+  
+  </select>
   
   <label>Destination:</label>
-  <input type="text" name="destination" ></input>
+   <select name="destination" >
+    <option value="DFW">DFW</option>
+    <option value="ATX">ATX</option>
+    <option value="BIA">BIA</option>
+    <option value="TKY">TKY</option>
+    <option value="NYC">NYC</option>
 
   <input type="submit" value="add flight">
   

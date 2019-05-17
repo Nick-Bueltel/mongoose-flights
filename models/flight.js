@@ -4,10 +4,7 @@ var Schema = mongoose.Schema;
 
 var flightSchema = new Schema({
   airline: {
-    type: String,
-    enum: ['Delta', 'United'],
-
-  },
+    type: String },
   flightNo: {type: Number, min: 10, max:9999},
   departs: Date, 
   airport: {type: String, },
