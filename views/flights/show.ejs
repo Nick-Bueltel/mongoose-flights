@@ -18,5 +18,45 @@
 
 </section>
 
+<section id="ticketsShow">
+<h1> TICKETS </H1>
+<table id="ticketsList">
+  <thead>
+    <tr>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% tickets.forEach(function(i) { %>
+      <tr>
+        <td><%= i.seat %></td>
+        <td><%= i.price%></td>
+
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+<h1>Add Ticket</h1>
+            <form method="POST"
+                action="/flights">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Seat:</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="seat"></td>
+                            <td><input type="text" name="price"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input id="addTicketButton" type="submit" value="add ticket">
+            </form>
+</section>
+
 
 

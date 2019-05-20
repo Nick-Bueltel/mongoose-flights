@@ -2,6 +2,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
+
+
+
 var flightSchema = new Schema({
   airline: {
     type: String },
@@ -9,11 +12,11 @@ var flightSchema = new Schema({
   departs: Date, 
   airport: {type: String, },
   destination: {type: String, },
-
-
-
-  
   
 });
 
+
+
+
 module.exports = mongoose.model('Flight', flightSchema);
+
